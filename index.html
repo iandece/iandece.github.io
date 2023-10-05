@@ -1,24 +1,112 @@
-<div id="Images">
-  <img
-    src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/404-wallet-transaction-not-found.png"
-  />
-  <img
-    src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/container-pair.png"
-  />
-  <img
-    src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/edi-new-booking.png"
-  />
-  <img
-    src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/404-booking-not-found.png"
-  />
-  <img
-    src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/land-new-booking.png"
-  />
+<div id="Container">
+  <div>
+    <button onclick="myFunction()">dark</button>
+    <button onclick="myFunction2()">white</button>
+  </div>
+  <div id="Images">
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/404-wallet-transaction-not-found.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/container-pair.png"
+    />
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/edi-new-booking.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/404-booking-not-found.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/land-new-booking.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/feedback.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/end-to-end-illustration.png"
+    />
+    <img
+      src="http://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/file-not-found.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/create-booking-no-vendor.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/check-success.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/search-pricing.png"
+    />
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/create-booking-form.png"
+    />
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/create-booking-guided.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/img/static/calendar_1.png"
+    />
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/empty-partner-forwarder.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/img/static/ifreight.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/payment-success.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/credit-card-blank.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/add-card-placeholder.png"
+    />
+    <img
+      src="http://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/wallet-activation-5.png"
+    />
+    <img
+      src="http://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/wallet-activation-2.png"
+    />
+    <img
+      src="http://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/wallet-activation-4.png"
+    />
+    <img
+      src="http://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/wallet-activation-3.png"
+    />
+    <img
+      src="http://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/wallet-activation-1.png"
+    />
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/create-booking-ftl.png"
+    />
+    <img
+      src="https://ifreight-upload.s3-ap-southeast-1.amazonaws.com/files/images/create-booking-land.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/land-booking-submitted.png"
+    />
+    <img
+      src="https://ifreight-upload.s3.ap-southeast-1.amazonaws.com/files/images/placeholder-image.png"
+    />
+  </div>
 </div>
 
 <style>
+  #Images {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #Images img {
-    width: 70px;
+    width: 100px;
     margin: 8px;
   }
 </style>
+
+<script>
+  function myFunction() {
+    document.body.style.backgroundColor = "black";
+  }
+  function myFunction2() {
+    document.body.style.backgroundColor = "white";
+  }
+</script>
