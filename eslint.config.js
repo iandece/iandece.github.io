@@ -24,6 +24,31 @@ export default defineConfig([
   ...pluginVue.configs['flat/essential'],
   skipFormatting,
   {
+    name: 'app/custom-rules',
+    files: ['**/*.{js,mjs,jsx,vue}'],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
+    },
+    rules: {
+      'no-console': 'error',
+      'no-unused-vars': [
+        'error',
+        {
+          varsIgnorePattern: '^_',
+          argsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
+
+      'vue/multi-word-component-names': 'off',
+      'vue/no-unused-components': 'error',
+      'vue/no-unused-vars': ['error', { ignorePattern: '^_' }],
+      'vue/require-explicit-emits': ['error', { allowProps: false }],
+    },
+  },
+  {
     name: 'app/node-config',
     files: ['*.config.js', 'vite.config.js', 'vue.config.js'],
     languageOptions: {
