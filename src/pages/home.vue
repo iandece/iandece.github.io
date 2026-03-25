@@ -1,11 +1,12 @@
 <template>
   <div class="bg-red-50">
-    <page-header>testing</page-header>
+    <page-header />
+    <div>testing 123</div>
   </div>
 </template>
 
 <script>
-import { pageHeader } from '@/components/templates/page-header.vue'
+import pageHeader from '@/components/templates/page-header.vue'
 
 export default {
   components: {
