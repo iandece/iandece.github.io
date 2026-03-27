@@ -1,13 +1,37 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Layout from '@/layouts/layout.vue'
+
 import Home from '@/pages/home.vue'
+import Project from '@/pages/project.vue'
+
+import Error404 from '@/pages/404.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),
   routes: [
     {
-      path: '/',
-      component: Home,
-      name: 'home',
+      path: '',
+      component: Layout,
+      redirect: {
+        name: 'home',
+      },
+      children: [
+        {
+          path: '',
+          component: Home,
+          name: 'home',
+        },
+        {
+          path: '/projects',
+          component: Project,
+          name: 'project',
+        },
+      ],
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: '404',
+      component: Error404,
     },
   ],
 })

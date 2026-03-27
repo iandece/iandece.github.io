@@ -1,24 +1,14 @@
 <template>
   <UHeader class="layout-header" mode="slideover">
-    <template #title>
-      <Logo class="h-6 w-auto" />
-    </template>
+    <template #title> Dian D.C </template>
 
     <UNavigationMenu :items="items" />
 
     <template #right>
       <UColorModeButton />
-
-      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
-        <UButton
-          color="neutral"
-          variant="ghost"
-          to="https://github.com/nuxt/ui"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-        />
-      </UTooltip>
+      <UButton color="neutral" variant="outline" @click="clickLangHandler">
+        {{ lang.toLocaleUpperCase() }}
+      </UButton>
     </template>
 
     <template #body>
@@ -28,23 +18,29 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
 
 const route = useRoute()
-
 const items = computed(() => [
   {
     label: 'Home',
-    to: '/docs/getting-started',
+    to: '/',
     icon: 'i-charm-home',
-    active: route.path.startsWith('/docs/getting-started'),
+    active: route.name === 'home',
   },
   {
     label: 'Projects',
-    to: '/docs/components',
+    to: '/projects',
     icon: 'i-lucide-box',
-    active: route.path.startsWith('/docs/components'),
+    active: route.path.startsWith('/projects'),
   },
 ])
+const lang = ref('en')
+const clickLangHandler = () => {
+  lang.value = lang.value === 'en' ? 'id' : 'en'
+  locale.value = lang.value
+}
 </script>

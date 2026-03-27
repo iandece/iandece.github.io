@@ -2,6 +2,6 @@
   @apply flex flex-col h-dvh;
 
   .layout-body {
-    @apply flex-1;
+    @apply flex-1 flex flex-col;
   }
 }
