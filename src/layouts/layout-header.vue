@@ -10,7 +10,7 @@
         {{ lang.toLocaleUpperCase() }}
       </UButton>
     </template>
-
+    {{ $t.home }}
     <template #body>
       <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
     </template>
@@ -21,23 +21,24 @@
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const route = useRoute()
 const items = computed(() => [
   {
-    label: 'Home',
+    label: t('home'),
     to: '/',
     icon: 'i-charm-home',
     active: route.name === 'home',
   },
   {
-    label: 'Projects',
-    to: '/projects',
+    label: t('myWorks'),
+    to: '/work',
     icon: 'i-lucide-box',
-    active: route.path.startsWith('/projects'),
+    active: route.path.startsWith('/work'),
   },
 ])
+
 const lang = ref('en')
 const clickLangHandler = () => {
   lang.value = lang.value === 'en' ? 'id' : 'en'

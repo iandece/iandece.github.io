@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '@/layouts/layout.vue'
 
 import Home from '@/pages/home.vue'
-import Project from '@/pages/project.vue'
+import Work from '@/pages/work.vue'
 
 import Error404 from '@/pages/404.vue'
 
@@ -22,9 +22,9 @@ const router = createRouter({
           name: 'home',
         },
         {
-          path: '/projects',
-          component: Project,
-          name: 'project',
+          path: '/work',
+          component: Work,
+          name: 'work',
         },
       ],
     },
