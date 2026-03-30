@@ -34,7 +34,7 @@
           @click="$router.push({ name: 'work' })"
           aria-label="Dian D.C see my work button"
         >
-          {{ $t('see') }} {{ $t('myWork') }}
+          {{ $t('see') }} {{ $t('myWorks') }}
         </UButton>
       </div>
     </div>
