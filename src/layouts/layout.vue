@@ -2,7 +2,7 @@
   <div class="layout-container">
     <layout-header />
     <main class="layout-body">
-      <UContainer>
+      <UContainer class="flex-1">
         <router-view class="main-app" />
       </UContainer>
     </main>
