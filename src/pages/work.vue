@@ -4,26 +4,32 @@
     <div class="flex mt-4 h-full">
       <div
         class="work-wrapper"
-        :class="{ 'w-full': !activeWorkDetails, 'w-1/2': !!activeWorkDetails }"
+        :class="{
+          'w-full': !activeWorkDetails,
+          'hidden lg:block lg:w-1/2': !!activeWorkDetails,
+        }"
       >
         <UButton
-          v-for="(work, index) in works"
-          :key="index"
-          :active="index === activeWorkIndex"
+          v-for="(work, indexWork) in works"
+          :key="indexWork"
+          :active="indexWork === activeWorkIndex"
           active-class="active-work"
           class="work"
           color="neutral"
           variant="outline"
-          @click="viewWorkDetail(index)"
+          @click="viewWorkDetail(indexWork)"
+          :class="{
+            'hidden lg:flex': !!activeWorkDetails,
+          }"
         >
-          <div class="w-6 text-left">{{ index + 1 }}.</div>
-          <div class="text-xl">
+          <div class="w-6 text-left">{{ indexWork + 1 }}.</div>
+          <div class="text-base lg:text-xl text-left">
             {{ work.title }}
           </div>
-          <div class="ml-auto text-muted">
+          <div class="ml-auto text-muted text-xs lg:text-base">
             {{ work.user }}
-            <div class="text-xs text-right mt-1">
-              <span v-for="(tech, indexTech) in work.mainTechs" :key="`${index}-${indexTech}`">
+            <div class="text-2xs lg:text-xs text-right mt-1">
+              <span v-for="(tech, indexTech) in work.mainTechs" :key="`${indexWork}-${indexTech}`">
                 <font-awesome-icon v-if="tech.faIcon" :icon="['fab', tech.faIcon]" />
                 <span v-else>
                   {{ tech.label }}
@@ -33,13 +39,21 @@
           </div>
         </UButton>
       </div>
-      <div v-if="activeWorkDetails" class="w-1/2 ml-4">
-        <h2>{{ activeWorkDetails.title }}</h2>
-        <div class="text-xs mt-1 flex gap-1">
+      <div v-if="activeWorkDetails" class="relative w-full lg:w-1/2 ml-0 lg:ml-4">
+        <UButton
+          color="neutral"
+          variant="ghost"
+          class="absolute right-0"
+          @click="activeWorkIndex = null"
+        >
+          <font-awesome-icon :icon="['fas', 'xmark']" />
+        </UButton>
+        <h2 class="text-lg lg:text-xl">{{ activeWorkDetails.title }}</h2>
+        <div class="text-xs mt-1 flex gap-1 flex-wrap">
           <UBadge
             v-for="(tech, indexTech) in activeWorkDetails.allTechs"
-            :key="`${index}-${indexTech}`"
-            color="neutral"
+            :key="indexTech"
+            color="success"
             variant="outline"
             class="capitalize"
           >
@@ -250,7 +264,7 @@ const viewWorkDetail = (index) => {
 }
 
 .work {
-  @apply w-full mb-2 flex py-4;
+  @apply w-full mb-2 py-4;
 }
 .active-work {
   background: var(--background-color-elevated);
