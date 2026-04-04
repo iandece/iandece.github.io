@@ -67,13 +67,27 @@
         <div
           class="flex flex-nowrap lg:flex-wrap flex-col lg:flex-row gap-4 justify-evenly overflow-auto"
         >
-          <img
+          <div
             v-for="(gallery, indexGallery) in activeWorkDetails.galleries"
             :key="indexGallery"
-            :src="getImage(gallery)"
-            class="border border-accented hover:border-gray-400 cursor-pointer p-2 rounded-sm object-cover h-56 lg:h-40 w-full lg:w-[45%]"
-            @click="clickGalleryHandler(indexGallery)"
-          />
+            class="relative h-56 lg:h-40 w-full lg:w-[45%]"
+          >
+            <USkeleton
+              v-if="imagesLoading[indexGallery] !== false"
+              class="absolute inset-0 z-10 w-full h-full rounded-sm"
+            />
+
+            <img
+              :src="getImage(gallery)"
+              class="border border-accented hover:border-gray-400 cursor-pointer p-2 rounded-sm object-cover w-full h-full transition-opacity duration-300"
+              :class="{
+                'opacity-0': imagesLoading[indexGallery] !== false,
+                'opacity-100': imagesLoading[indexGallery] === false,
+              }"
+              @load="handleImageLoad(indexGallery)"
+              @click="clickGalleryHandler(indexGallery)"
+            />
+          </div>
         </div>
         <div :key="activeWorkIndex">
           <FsLightbox :toggler="toggler" :sourceIndex="sourceIndex" :sources="dynamicSources" />
@@ -95,6 +109,7 @@ const { getImage } = useAssets()
 const activeWorkIndex = ref(null)
 const toggler = ref(false)
 const sourceIndex = ref(0)
+const imagesLoading = ref({})
 
 const activeWorkDetails = computed(() => {
   return activeWorkIndex.value !== null ? works[activeWorkIndex.value] : null
@@ -106,8 +121,17 @@ const dynamicSources = computed(() => {
     : []
 })
 
+const handleImageLoad = (index) => {
+  imagesLoading.value[index] = false
+}
+
 const viewWorkDetail = (index) => {
-  activeWorkIndex.value = activeWorkIndex.value === index ? null : index
+  if (activeWorkIndex.value !== index) {
+    imagesLoading.value = {} // reset state loading
+    activeWorkIndex.value = index
+  } else {
+    activeWorkIndex.value = null
+  }
 }
 
 const clickGalleryHandler = (index) => {

@@ -1,7 +1,14 @@
 <template>
   <div class="h-full flex flex-col lg:flex-row justify-center gap-10">
-    <div class="w-full lg:w-1/3 my-auto">
-      <img src="@/assets/images/me.webp" alt="Photo of Dian Dwi Cahyo" class="rounded-4xl" />
+    <div class="w-full lg:w-1/3 my-auto relative min-h-75 flex items-center justify-center">
+      <USkeleton v-if="isImageLoading" class="absolute inset-0 w-full h-full rounded-4xl" />
+
+      <img
+        src="@/assets/images/me.webp"
+        alt="Photo of Dian Dwi Cahyo"
+        class="rounded-4xl transition-opacity duration-500 w-full"
+        @load="handleImageLoad"
+      />
     </div>
     <div class="w-full lg:w-2/5 my-auto">
       <h1 class="text-7xl uppercase">
@@ -40,3 +47,13 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+const isImageLoading = ref(true)
+
+const handleImageLoad = () => {
+  isImageLoading.value = false
+}
+</script>
