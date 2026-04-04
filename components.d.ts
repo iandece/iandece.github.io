@@ -12,10 +12,6 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Background: typeof import('./src/components/background.vue')['default']
-    Background2: typeof import('./src/components/background2.vue')['default']
-    Background3: typeof import('./src/components/background3.vue')['default']
-    Background4: typeof import('./src/components/background4.vue')['default']
-    Background5: typeof import('./src/components/background5.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UApp: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
