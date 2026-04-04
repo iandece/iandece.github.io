@@ -3,5 +3,43 @@
   "introduction": "i am",
   "see": "See",
   "home": "Home",
-  "myWorks": "My Works"
+  "myWorks": "My Works",
+  "work": {
+    "expedira": {
+      "description": "<strong>Expedira</strong> is a comprehensive <strong>SaaS (Software as a Service)</strong> platform designed to optimize freight forwarder operations. With an integrated approach, Expedira removes data silos and streamlines workflows from end to end within a single, efficient digital ecosystem. The platform combines logistics management, financial operations, and team collaboration into a unified dashboard, helping teams improve efficiency and maintain better operational visibility."
+    },
+    "ifreightUser": {
+      "description": "<strong>Ifreight</strong> is the first <strong>end-to-end (E2E) logistics platform in Indonesia</strong> that directly connects shipping vendors with shippers. Shippers can book shipments with optional services provided by iFreight.id, while vendors can manage and publish their route rates. With interactive dashboards, service management (FCL, LCL, trucking, etc.), payment handling, and real-time live chat, the platform simplifies coordination and helps accelerate logistics workflows."
+    },
+    "ifreightLanding": {
+      "description": "<strong>Ifreight Landing Page</strong> serves as the main entry point for iFreight.id services, featuring a modern, responsive design with support for both Indonesian and English, helping improve accessibility and user engagement."
+    },
+    "ifreightInternal": {
+      "description": "<strong>Ifreight Internal Page</strong> is a dashboard built for internal use within iFreight.id. It provides comprehensive tools to monitor operations, including real-time chat and workflow support features, enabling teams to manage daily tasks more efficiently."
+    },
+    "transporter": {
+      "description": "<strong>Transporter App</strong> is a mobile application designed to help shippers monitor their bookings. With real-time status notifications, it improves visibility and helps users respond more quickly to changes in the booking process."
+    },
+    "ifreightBlog": {
+      "description": "<strong>Ifreight Blog</strong> was developed to support SEO initiatives, increase organic traffic, and build credibility, while strengthening engagement between iFreight.id and its users."
+    },
+    "roblox": {
+      "description": "<strong>BTG (Be The Guild Master)</strong> is a game map currently being developed by my team and me. It features a simulation concept where players act as guild leaders, recruit adventurers, complete missions, and progressively grow their guild."
+    },
+    "asik": {
+      "description": "<strong>ASIK</strong> (Akselerasi Ekspor Kreasi Indonesia) is a program launched by the Ministry of Creative Economy (Ekraf). Within a tight timeline, we delivered a web-based application covering the landing page, registration flow, and participant management system, ensuring the program could run smoothly."
+    },
+    "aki": {
+      "description": "<strong>AKI</strong> (Apresiasi Kreasi Indonesia) is an annual program initiated by the Ministry of Tourism and Creative Economy (Kemenparekraf). From 2021 to 2024, we consistently delivered landing pages, registration systems, and participant management solutions to support the program’s execution."
+    },
+    "netcorner": {
+      "description": "<strong>NET Corner</strong> is a web-based internal management system developed to support the operations of PT Net Mediatama Indonesia (now PT MDTV Media Technologies Tbk). It integrates HR processes such as leave requests and evaluations with operational needs like studio booking and resource management. Designed with a hierarchical approval system, it helps streamline internal processes and improve coordination across teams."
+    },
+    "alamHotel": {
+      "description": "<strong>AlamHotel</strong> is a digital hotel booking solution designed for seamless access across devices. With a modern and responsive interface, it provides a smoother and more efficient booking experience for users."
+    },
+    "jalaPos": {
+      "description": "<strong>JalaPOS</strong> is a web-based POS solution designed to simplify ordering processes in the food and beverage industry. As my first professional project as a Fullstack Web Programmer, I developed essential features such as table reservations, order customization, payment integration, and receipt printing, supporting day-to-day business operations."
+    }
+  }
 }

@@ -3,5 +3,43 @@
   "introduction": "saya",
   "see": "Lihat",
   "home": "Beranda",
-  "myWorks": "Karya Saya"
+  "myWorks": "Karya Saya",
+  "work": {
+    "expedira": {
+      "description": "<strong>Expedira</strong> adalah platform <strong>SaaS (Software as a Service)</strong> komprehensif yang dirancang khusus untuk mengoptimalkan operasional perusahaan Freight Forwarder. Dengan pendekatan yang terintegrasi, Expedira menghilangkan hambatan data dan mempercepat alur kerja dari hulu ke hilir dalam satu ekosistem digital yang efisien, sehingga membantu meningkatkan produktivitas tim dan visibilitas operasional. Platform ini mengintegrasikan manajemen logistik, keuangan, dan kolaborasi tim dalam satu dasbor terpadu untuk meningkatkan efisiensi dan transparansi bisnis."
+    },
+    "ifreightUser": {
+      "description": "<strong>Ifreight</strong> adalah platform <strong>E2E (End-to-End) logistik pertama di Indonesia </strong> yang menghubungkan shipping vendor langsung ke shipper. Shipper dapat melakukan booking pelayaran dengan opsi menggunakan jasa-jasa yang disediakan oleh iFreight.id dan Vendor Pelayaran dapat memasukkan Rates untuk rute pelayaran yang mereka punya. Dengan adanya fitur interaktif dasbor, manajemen servis (FCL, LCL, Trucking, dll), manajemen pembayaran hingga real-time live chat, iFreight.id mempermudah koordinasi dan mempercepat alur bisnis logistik Indonesia."
+    },
+    "ifreightLanding": {
+      "description": "<strong>Ifreight Landing Page</strong> dibuat sebagai titik awal layanan iFreight.id, dengan tampilan yang menarik dan responsive serta dukungan bahasa Indonesia dan Inggris, sehingga membantu meningkatkan aksesibilitas dan engagement pengguna."
+    },
+    "ifreightInternal": {
+      "description": "<strong>Ifreight Internal Page</strong> adalah dasbor yang dibuat untuk kebutuhan internal iFreight.id. Fitur yang lengkap untuk membantu memantau operasional, termasuk realtime chat dan berbagai kebutuhan internal lainnya, sehingga membantu tim dalam mengelola aktivitas harian secara lebih efisien."
+    },
+    "transporter": {
+      "description": "<strong>Transporter app</strong> adalah aplikasi mobile yang dibuat untuk memudahkan shipper memantau booking yang mereka buat, dengan fitur notifikasi untuk setiap perubahan status, sehingga meningkatkan visibilitas proses dan membantu mempercepat respons terhadap kebutuhan bisnis."
+    },
+    "ifreightBlog": {
+      "description": "<strong>Ifreight blog</strong> dibuat untuk meningkatkan SEO, traffic, membangun kredibilitas, serta memperkuat hubungan antara iFreight.id dan pengguna."
+    },
+    "roblox": {
+      "description": "<strong>BTG</strong> Be The Guild Master adalah map yang saya dan rekan-rekan saya sedang buat. Dengan konsep simulasi menjadi seorang pemimpin guild yang dapat merekrut para petualang, menjalani misi hingga meningkatkan Guild, memberikan pengalaman bermain yang progresif dan engaging."
+    },
+    "asik": {
+      "description": "<strong>ASIK</strong> program Akselerasi Ekspor Kreasi Indonesia yang diluncurkan oleh Kementerian Ekonomi Kreatif (Ekraf). Dengan timeline yang sangat ketat kami berhasil mengembangkan aplikasi berbasis web mulai dari landing page, pendaftaran hingga manajemen peserta, sehingga mendukung kelancaran pelaksanaan program."
+    },
+    "aki": {
+      "description": "<strong>AKI</strong> (Apreasiasi Kreasi Indonesia) adalah program tahunan yang diluncurkan oleh Kementerian Pariwisata dan Ekonomi Kreatif (Kemenparekraf). Kami dipercaya sejak tahun 2021 hingga 2024 untuk membuat landing page, proses / form pendaftaran hingga manajemen peserta, membantu memastikan program berjalan secara konsisten setiap tahunnya."
+    },
+    "netcorner": {
+      "description": "<strong>NET Corner</strong> adalah sistem manajemen internal berbasis web yang dikembangkan untuk mendukung operasional PT Net Mediatama Indonesia (kini PT MDTV Media Technologies Tbk). Sistem ini mengintegrasikan berbagai fungsi mulai dari manajemen SDM seperti pengajuan cuti dan penilaian karyawan, hingga kebutuhan teknis seperti booking studio serta manajemen permintaan grafis dan kru. Dirancang dengan sistem hierarki persetujuan (approval), platform ini membantu menyederhanakan proses bisnis dan meningkatkan efisiensi operasional perusahaan."
+    },
+    "alamHotel": {
+      "description": "<strong>AlamHotel</strong> merupakan solusi digital pemesanan hotel yang dirancang untuk kemudahan akses di berbagai perangkat. Mengusung desain modern dan responsif, aplikasi ini membantu menghadirkan proses booking yang lebih cepat dan nyaman bagi pengguna."
+    },
+    "jalaPos": {
+      "description": "<strong>JalaPOS</strong> merupakan solusi POS berbasis web yang dirancang untuk menyederhanakan proses pemesanan di bisnis kuliner. Proyek ini menandai langkah profesional pertama saya sebagai Fullstack Web Programmer, di mana saya membangun fitur-fitur esensial seperti reservasi meja, kustomisasi pesanan melalui notes, integrasi pembayaran, hingga fitur cetak struk, yang mendukung kebutuhan operasional bisnis sehari-hari."
+    }
+  }
 }

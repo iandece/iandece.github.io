@@ -1,5 +1,6 @@
 <template>
   <div class="layout-container">
+    <Background />
     <layout-header />
     <main class="layout-body">
       <UContainer class="flex-1">
@@ -10,15 +11,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import layoutHeader from '@/layouts/layout-header.vue'
 import layoutFooter from '@/layouts/layout-footer.vue'
-
-export default {
-  components: {
-    layoutHeader,
-    layoutFooter,
-  },
-  setup() {},
-}
+import Background from '@/components/background.vue'
 </script>
