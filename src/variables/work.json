@@ -1,0 +1,200 @@
+[
+  {
+    "title": "Client & Internal Expedira",
+    "user": "Expedira",
+    "mainTechs": [
+      {
+        "label": "Vue",
+        "faIcon": "vuejs",
+        "exIcon": null
+      }
+    ],
+    "allTechs": [
+      "vue.js",
+      "tailwindcss",
+      "expedira UI Kit",
+      "husky & lint-staged",
+      "yup & vee-validate"
+    ],
+    "description": "work.expedira.description",
+    "galleries": ["expedira/1.avif", "expedira/2.avif"]
+  },
+  {
+    "title": "Shipper & Vendor iFreight.id",
+    "user": "iFreight.id",
+    "mainTechs": [
+      {
+        "label": "Vue",
+        "faIcon": "vuejs",
+        "exIcon": null
+      }
+    ],
+    "allTechs": [
+      "nuxt.js",
+      "tailwind",
+      "ifreight UI Kit",
+      "centrifuge (websocket)",
+      "sentry",
+      "element-ui"
+    ],
+    "description": "work.ifreightUser.description",
+    "galleries": [
+      "ifreight-user/s1.avif",
+      "ifreight-user/s2.avif",
+      "ifreight-user/s3.avif",
+      "ifreight-user/v1.avif",
+      "ifreight-user/v2.avif",
+      "ifreight-user/v3.avif"
+    ]
+  },
+  {
+    "title": "IFreight Landing Page",
+    "user": "iFreight.id",
+    "mainTechs": [
+      {
+        "label": "Vue (typescript)",
+        "faIcon": "vuejs",
+        "exIcon": null
+      }
+    ],
+    "allTechs": ["vue.js (typescript)", "tailwind", "GTM", "vue-i18n", "husky & lint-staged"],
+    "description": "work.ifreightLanding.description",
+    "galleries": ["ifreight-landing/1.avif", "ifreight-landing/2.avif", "ifreight-landing/3.avif"]
+  },
+  {
+    "title": "Internal iFreight.id",
+    "user": "iFreight.id",
+    "mainTechs": [
+      {
+        "label": "Nuxt.js",
+        "faIcon": null,
+        "exIcon": "nuxt"
+      }
+    ],
+    "allTechs": ["nuxt.js", "tailwind", "ifreight UI Kit", "centrifuge (websocket)"],
+    "description": "work.ifreightInternal.description",
+    "galleries": ["ifreight-internal/1.avif"]
+  },
+  {
+    "title": "Shipper Transporter App",
+    "user": "iFreight.id",
+    "mainTechs": [
+      {
+        "label": "Flutter",
+        "faIcon": "flutter",
+        "exIcon": null
+      }
+    ],
+    "allTechs": ["flutter", "firebase"],
+    "description": "work.transporter.description",
+    "galleries": [
+      "ifreight-transporter/1.avif",
+      "ifreight-transporter/2.avif",
+      "ifreight-transporter/3.avif"
+    ]
+  },
+  {
+    "title": "IFreight Blog Page",
+    "user": "iFreight.id",
+    "mainTechs": [
+      {
+        "label": "Wordpress",
+        "faIcon": "wordpress",
+        "exIcon": null
+      }
+    ],
+    "allTechs": ["wordpress", "tailwind"],
+    "description": "work.ifreightBlog.description",
+    "galleries": ["ifreight-blog/1.avif", "ifreight-blog/2.avif"]
+  },
+  {
+    "title": "Roblox Game Map",
+    "user": "Self-employed",
+    "mainTechs": [
+      {
+        "label": "luau",
+        "faIcon": null,
+        "exIcon": "lua"
+      }
+    ],
+    "allTechs": ["Roblox Studio"],
+    "description": "work.roblox.description",
+    "galleries": []
+  },
+  {
+    "title": "Akselerasi Ekspor Kreasi Indonesia (ASIK)",
+    "user": "Kemenekraf",
+    "mainTechs": [
+      {
+        "label": "Vue",
+        "faIcon": "vuejs",
+        "exIcon": null
+      }
+    ],
+    "allTechs": ["vue.js", "tailwindcss", "daisy ui", "husky & lint-staged", "yup & vee-validate"],
+    "description": "work.asik.description",
+    "galleries": ["asik/1.avif", "asik/2.avif", "asik/3.avif", "asik/4.avif", "asik/5.avif"]
+  },
+  {
+    "title": "Apresiasi Kreasi Indonesia (AKI)",
+    "user": "Kemenparekraf",
+    "mainTechs": [
+      {
+        "label": "Vue",
+        "faIcon": "vuejs",
+        "exIcon": null
+      }
+    ],
+    "allTechs": ["vue.js", "tailwindcss", "element-ui", "husky", "yup & vee-validate"],
+    "description": "work.aki.description",
+    "galleries": ["aki/1.avif", "aki/2.avif", "aki/3.avif", "aki/4.avif", "aki/5.avif"]
+  },
+  {
+    "title": "Net Corner",
+    "user": "Netmediatama / Net.tv",
+    "mainTechs": [
+      {
+        "label": "Codeigniter",
+        "faIcon": null,
+        "exIcon": "codeigniter"
+      }
+    ],
+    "allTechs": ["codeigniter", "bootstrap", "jQuery", "MySQL"],
+    "description": "work.netcorner.description",
+    "galleries": [
+      "netcorner/1.avif",
+      "netcorner/2.avif",
+      "netcorner/3.avif",
+      "netcorner/4.avif",
+      "netcorner/5.avif"
+    ]
+  },
+  {
+    "title": "Alamhotel",
+    "user": "PT. Almita Jalamaya",
+    "mainTechs": [
+      {
+        "label": "Codeigniter",
+        "faIcon": null,
+        "exIcon": "codeigniter"
+      }
+    ],
+    "allTechs": ["codeigniter", "bootstrap", "jQuery", "MySQL"],
+    "description": "work.alamHotel.description",
+    "galleries": ["alamhotel/1.avif", "alamhotel/2.avif", "alamhotel/3.avif"]
+  },
+  {
+    "title": "Jala POS",
+    "user": "PT. Almita Jalamaya",
+    "mainTechs": [
+      {
+        "label": "Codeigniter",
+        "faIcon": null,
+        "exIcon": "codeigniter"
+      }
+    ],
+    "allTechs": ["codeigniter", "bootstrap", "jQuery", "MySQL"],
+    "description": "work.jalaPos.description",
+    "galleries": ["jalapos/1.avif", "jalapos/2.avif"]
+  }
+]
