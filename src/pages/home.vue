@@ -14,7 +14,7 @@
       <h1 class="text-7xl uppercase">
         <span class="main-text-color capitalize text-lg">{{ $t('hi') }},</span>
         <br />
-        {{ $t('introduction') }} Dian D.C
+        {{ $t('introduction') }} Dian D.C.
       </h1>
       <h2 class="secondary-text-color">Web Developer</h2>
 

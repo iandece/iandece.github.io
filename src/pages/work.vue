@@ -28,7 +28,7 @@
           </div>
           <div class="ml-auto text-muted text-xs lg:text-base">
             {{ work.user }}
-            <div class="text-2xs lg:text-xs text-right mt-1">
+            <div class="text-2xs lg:text-xs text-right mt-1 flex gap-1 justify-end">
               <span v-for="(tech, indexTech) in work.mainTechs" :key="`${indexWork}-${indexTech}`">
                 <font-awesome-icon v-if="tech.faIcon" :icon="['fab', tech.faIcon]" />
                 <span v-else>
@@ -39,7 +39,7 @@
           </div>
         </UButton>
       </div>
-      <div v-if="activeWorkDetails" class="relative w-full lg:w-1/2 ml-0 lg:ml-4">
+      <div v-if="activeWorkDetails" class="work-detail">
         <UButton
           color="neutral"
           variant="ghost"
@@ -89,10 +89,10 @@
             />
           </div>
         </div>
-        <div :key="activeWorkIndex">
-          <FsLightbox :toggler="toggler" :sourceIndex="sourceIndex" :sources="dynamicSources" />
-        </div>
       </div>
+    </div>
+    <div v-if="activeWorkDetails" :key="activeWorkIndex">
+      <FsLightbox :toggler="toggler" :sourceIndex="sourceIndex" :sources="dynamicSources" />
     </div>
   </main>
 </template>
@@ -148,15 +148,31 @@ const clickGalleryHandler = (index) => {
 }
 .work-wrapper {
   overflow-y: auto;
-  scrollbar-gutter: stable;
   padding-right: 12px;
   margin-right: -12px;
+  transition: width 0.4s ease;
 }
-
 .work {
   @apply w-full mb-2 py-4;
 }
 .active-work {
   background: var(--background-color-elevated);
+}
+.work-detail {
+  @apply relative w-full lg:w-1/2 ml-0 lg:ml-4;
+  transition: width 0.3s ease-in-out;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.2s ease;
+}
+
+.slide-enter-from {
+  transform: translateX(100%);
+}
+
+.slide-leave-to {
+  transform: translateX(100%);
 }
 </style>

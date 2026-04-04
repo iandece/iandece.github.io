@@ -157,6 +157,11 @@
         "label": "Codeigniter",
         "faIcon": null,
         "exIcon": "codeigniter"
+      },
+      {
+        "label": "Laravel",
+        "faIcon": "laravel",
+        "exIcon": null
       }
     ],
     "allTechs": ["codeigniter", "bootstrap", "jQuery", "MySQL"],

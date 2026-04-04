@@ -1,6 +1,6 @@
 <template>
   <UHeader class="layout-header" mode="slideover">
-    <template #title> Dian D.C </template>
+    <template #title> Dian D.C. </template>
 
     <UNavigationMenu :items="items" />
 
