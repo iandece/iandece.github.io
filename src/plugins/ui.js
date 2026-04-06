@@ -1,3 +1,3 @@
-import ui from '@nuxt/ui/vue-plugin'
+import ui from '@nuxt/ui/vue-plugin';
 
-export default ui
+export default ui;

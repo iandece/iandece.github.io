@@ -105,46 +105,47 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
-import works from '@/variables/work.json'
-import FsLightbox from 'fslightbox-vue'
+import { computed, ref } from 'vue';
+import works from '@/variables/work.json';
+import FsLightbox from 'fslightbox-vue';
 
-import { useAssets } from '@/composables/useAssets'
+import { useAssets } from '@/composables/useAssets';
 
-const { getImage } = useAssets()
+const { getImage } = useAssets();
 
-const activeWorkIndex = ref(null)
-const toggler = ref(false)
-const sourceIndex = ref(0)
-const imagesLoading = ref({})
+const activeWorkIndex = ref(null);
+const toggler = ref(false);
+const sourceIndex = ref(0);
+const imagesLoading = ref({});
 
 const activeWorkDetails = computed(() => {
-  return activeWorkIndex.value !== null ? works[activeWorkIndex.value] : null
-})
+  return activeWorkIndex.value !== null ? works[activeWorkIndex.value] : null;
+});
 
 const dynamicSources = computed(() => {
   return activeWorkIndex.value !== null
     ? works[activeWorkIndex.value].galleries.map((path) => getImage(path))
-    : []
-})
+    : [];
+});
 
 const handleImageLoad = (index) => {
-  imagesLoading.value[index] = false
-}
+  imagesLoading.value[index] = false;
+};
 
 const viewWorkDetail = (index) => {
   if (activeWorkIndex.value !== index) {
-    imagesLoading.value = {} // reset state loading
-    activeWorkIndex.value = index
+    imagesLoading.value = {}; // reset state loading
+    activeWorkIndex.value = index;
   } else {
-    activeWorkIndex.value = null
+    activeWorkIndex.value = null;
   }
-}
+};
 
 const clickGalleryHandler = (index) => {
-  sourceIndex.value = index
-  toggler.value = !toggler.value
-}
+  sourceIndex.value = index;
+
+  toggler.value = !toggler.value;
+};
 </script>
 
 <style>

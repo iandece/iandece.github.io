@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Layout from '@/layouts/layout.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import Layout from '@/layouts/layout.vue';
 
-import Home from '@/pages/home.vue'
-import Work from '@/pages/work.vue'
+import Home from '@/pages/home.vue';
+import Work from '@/pages/work.vue';
 
-import Error404 from '@/pages/404.vue'
+import Error404 from '@/pages/404.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),
@@ -34,6 +34,6 @@ const router = createRouter({
       component: Error404,
     },
   ],
-})
+});
 
-export default router
+export default router;

@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import layoutHeader from '@/layouts/layout-header.vue'
-import layoutFooter from '@/layouts/layout-footer.vue'
-import Background from '@/components/background.vue'
+import layoutHeader from '@/layouts/layout-header.vue';
+import layoutFooter from '@/layouts/layout-footer.vue';
+import Background from '@/components/background.vue';
 </script>

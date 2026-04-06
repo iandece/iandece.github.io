@@ -49,11 +49,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const isImageLoading = ref(true)
+const isImageLoading = ref(true);
 
 const handleImageLoad = () => {
-  isImageLoading.value = false
-}
+  isImageLoading.value = false;
+};
 </script>
