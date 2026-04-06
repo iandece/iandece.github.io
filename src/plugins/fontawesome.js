@@ -1,7 +1,7 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-import { faXmark, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
   faGithub,
@@ -10,7 +10,7 @@ import {
   faFlutter,
   faVuejs,
   faWordpress,
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
 // import {  } from '@fortawesome/free-regular-svg-icons'
 
 library.add(
@@ -23,6 +23,6 @@ library.add(
   faFlutter,
   faVuejs,
   faWordpress,
-)
+);
 
-export default FontAwesomeIcon
+export default FontAwesomeIcon;

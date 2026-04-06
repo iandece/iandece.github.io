@@ -18,12 +18,12 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
-import { useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-const { locale, t } = useI18n()
+import { computed, ref } from 'vue';
+import { useRoute } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+const { locale, t } = useI18n();
 
-const route = useRoute()
+const route = useRoute();
 const items = computed(() => [
   {
     label: t('home'),
@@ -37,11 +37,11 @@ const items = computed(() => [
     icon: 'i-lucide-box',
     active: route.path.startsWith('/work'),
   },
-])
+]);
 
-const lang = ref('en')
+const lang = ref('en');
 const clickLangHandler = () => {
-  lang.value = lang.value === 'en' ? 'id' : 'en'
-  locale.value = lang.value
-}
+  lang.value = lang.value === 'en' ? 'id' : 'en';
+  locale.value = lang.value;
+};
 </script>
