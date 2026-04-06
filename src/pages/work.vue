@@ -25,6 +25,13 @@
           <div class="w-6 text-left">{{ indexWork + 1 }}.</div>
           <div class="text-base lg:text-xl text-left">
             {{ work.title }}
+            <UTooltip :text="work.status.toUpperCase()">
+              <font-awesome-icon
+                v-if="work.status === 'paused'"
+                :icon="['fas', 'exclamation-circle']"
+                class="text-red-400 text-xs align-middle"
+              />
+            </UTooltip>
           </div>
           <div class="ml-auto text-muted text-xs lg:text-base">
             {{ work.user }}

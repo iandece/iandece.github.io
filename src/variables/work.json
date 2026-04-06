@@ -1,7 +1,9 @@
 [
   {
     "title": "Client & Internal Expedira",
+    "key": "expediraClientInternal",
     "user": "Expedira",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Vue",
@@ -20,8 +22,26 @@
     "galleries": ["expedira/1.avif", "expedira/2.avif"]
   },
   {
+    "title": "Roblox Game Map",
+    "key": "roblox",
+    "user": "Self-employed",
+    "status": "paused",
+    "mainTechs": [
+      {
+        "label": "luau",
+        "faIcon": null,
+        "exIcon": "lua"
+      }
+    ],
+    "allTechs": ["Roblox Studio"],
+    "description": "work.roblox.description",
+    "galleries": ["roblox/1.avif", "roblox/2.avif"]
+  },
+  {
     "title": "Shipper & Vendor iFreight.id",
+    "key": "ifreightShipperVendor",
     "user": "iFreight.id",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Vue",
@@ -49,7 +69,9 @@
   },
   {
     "title": "IFreight Landing Page",
+    "key": "ifreightLanding",
     "user": "iFreight.id",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Vue (typescript)",
@@ -63,7 +85,9 @@
   },
   {
     "title": "Internal iFreight.id",
+    "key": "ifreightInternal",
     "user": "iFreight.id",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Nuxt.js",
@@ -77,7 +101,9 @@
   },
   {
     "title": "Shipper Transporter App",
+    "key": "ifreightTransporter",
     "user": "iFreight.id",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Flutter",
@@ -95,7 +121,9 @@
   },
   {
     "title": "IFreight Blog Page",
+    "key": "ifreightBlog",
     "user": "iFreight.id",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Wordpress",
@@ -108,22 +136,10 @@
     "galleries": ["ifreight-blog/1.avif", "ifreight-blog/2.avif"]
   },
   {
-    "title": "Roblox Game Map",
-    "user": "Self-employed",
-    "mainTechs": [
-      {
-        "label": "luau",
-        "faIcon": null,
-        "exIcon": "lua"
-      }
-    ],
-    "allTechs": ["Roblox Studio"],
-    "description": "work.roblox.description",
-    "galleries": []
-  },
-  {
     "title": "Akselerasi Ekspor Kreasi Indonesia (ASIK)",
+    "key": "asik",
     "user": "Kemenekraf",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Vue",
@@ -137,7 +153,9 @@
   },
   {
     "title": "Apresiasi Kreasi Indonesia (AKI)",
+    "key": "aki",
     "user": "Kemenparekraf",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Vue",
@@ -151,7 +169,9 @@
   },
   {
     "title": "Net Corner",
+    "key": "netCorner",
     "user": "Netmediatama / Net.tv",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Codeigniter",
@@ -176,7 +196,9 @@
   },
   {
     "title": "Alamhotel",
+    "key": "alamHotel",
     "user": "PT. Almita Jalamaya",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Codeigniter",
@@ -190,7 +212,9 @@
   },
   {
     "title": "Jala POS",
+    "key": "jalaPos",
     "user": "PT. Almita Jalamaya",
+    "status": "done",
     "mainTechs": [
       {
         "label": "Codeigniter",
