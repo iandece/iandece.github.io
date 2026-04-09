@@ -16,7 +16,8 @@
       "tailwindcss",
       "expedira UI Kit",
       "husky & lint-staged",
-      "yup & vee-validate"
+      "yup & vee-validate",
+      "ChatGPT"
     ],
     "description": "work.expedira.description",
     "galleries": ["expedira/1.avif", "expedira/2.avif"]
@@ -33,7 +34,7 @@
         "exIcon": "lua"
       }
     ],
-    "allTechs": ["Roblox Studio"],
+    "allTechs": ["Roblox Studio", "luau", "Claude Ai"],
     "description": "work.roblox.description",
     "galleries": ["roblox/1.avif", "roblox/2.avif"]
   },
@@ -147,7 +148,14 @@
         "exIcon": null
       }
     ],
-    "allTechs": ["vue.js", "tailwindcss", "daisy ui", "husky & lint-staged", "yup & vee-validate"],
+    "allTechs": [
+      "vue.js",
+      "tailwindcss",
+      "daisy ui",
+      "husky & lint-staged",
+      "yup & vee-validate",
+      "ChatGPT"
+    ],
     "description": "work.asik.description",
     "galleries": ["asik/1.avif", "asik/2.avif", "asik/3.avif", "asik/4.avif", "asik/5.avif"]
   },
